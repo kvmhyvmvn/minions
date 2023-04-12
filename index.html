@@ -60,14 +60,15 @@
     </header>
     <div class="youtube">
       <iframe
-        width="896"
-        height="504"
+        id="movie"
         src="https://www.youtube.com/embed/j7A1XncPp-Q"
         title="[미니언즈-2] 대장 따라 삼만리"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-      ></iframe>
+      >
+        이 브라우저는 iframe 태그를 지원하지 않습니다.
+      </iframe>
       <div class="main-character">
         <img src="images/visual_img.png" alt="메인캐릭터" />
       </div>
@@ -75,18 +76,18 @@
     <section id="main">
       <h2 class="d-none">minions character</h2>
       <article>
-        <h3>character</h3>
-        <div class="chars">
-          <div>
+        <h3 class="article-title">character</h3>
+        <ul class="chars">
+          <li>
             <img src="images/char1.jpg" alt="dave" />
-          </div>
-          <div>
+          </li>
+          <li>
             <img src="images/char2.jpg" alt="lance" />
-          </div>
-          <div>
+          </li>
+          <li>
             <img src="images/char3.jpg" alt="jerry" />
-          </div>
-        </div>
+          </li>
+        </ul>
       </article>
     </section>
     <aside>
@@ -99,13 +100,19 @@
       </div>
     </aside>
     <footer>
-        <ul>
-            <li><a href="#">제휴업체</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보취급방침</a></li>
+      <div class="footer-wrap">
+        <ul class="extra-links">
+          <li><a href="#">제휴업체</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보취급방침</a></li>
         </ul>
         <p class="copyright">&copy; minions.</p>
-        <div class="sub-logo"></div>
+        <div class="sub-logo">
+          <a href="/">
+            <img src="images/footer_logo.png" alt="minions" />
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
