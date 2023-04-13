@@ -39,13 +39,13 @@ body::before {
   color: #000;
 }
 .links a::after {
-    content: "|";
-    margin: 0 10px;
-  }
-  .links a:nth-last-child(1)::after {
-    content: "";
-    margin: 0;
-  }
+  content: "|";
+  margin: 0 10px;
+}
+.links a:nth-last-child(1)::after {
+  content: "";
+  margin: 0;
+}
 .main-logo {
   position: absolute;
   bottom: 0;
@@ -58,9 +58,9 @@ body::before {
   top: 70px;
 }
 nav {
-    border-top: 2px solid #f9c02d;
-    position: relative;
-    top:-3px;
+  border-top: 2px solid #f9c02d;
+  position: relative;
+  top: -3px;
 }
 #gnb {
   width: 500px;
@@ -82,8 +82,8 @@ nav {
   color: #000;
 }
 .youtube {
-    position: relative;
-    padding-bottom: 56.25%;
+  position: relative;
+  padding-bottom: 56.25%;
 }
 
 #movie {
@@ -104,6 +104,9 @@ nav {
   text-transform: capitalize;
   margin: 150px 0 20px 0;
 }
+.bigger {
+  font-size: 2rem;
+}
 .chars {
   max-width: 926px;
   margin: 0 auto;
@@ -117,15 +120,87 @@ nav {
 .chars li img {
   border: 1px solid #f9c02d;
 }
+.article-wrap {
+  max-width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bg-gray {
+  background: #d9d9d9;
+}
+.score {
+  overflow: hidden;
+  margin: 50px 0;
+}
+.score > div {
+  width: 33.33333333333333%;
+  float: left;
+  text-align: center;
+}
+.cost {
+  font-size: 3rem;
+}
+.tooltip {
+  font-size: 1.75rem;
+  color: gray;
+}
+.score + blockquote {
+  /* 다음 형제요소 선택자 */
+  border-top: 1px solid lightgray;
+  color: gray;
+  padding: 1rem 0 0 0;
+}
+/* movie trailers : article */
+.description {
+  float: left;
+  width: 35%;
+}
+.description .story {
+  padding: 50px 0 0 0;
+}
+.btn {
+  background: #f9c02d;
+  color: black;
+  padding: 5px 10px;
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  background: black;
+  color: #f9c02d;
+}
+.btn-round {
+  border-radius: 10px;
+}
+.middle {
+  position: relative;
+  top: 5px;
+}
+.trailer {
+  float: right;
+  width: 60%;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.youtube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 0;
+}
+
+/* movie trailers : article */
+
 aside {
   background: #f9c02d;
 }
-
 .event {
   max-width: 920px;
   margin: 100px auto;
 }
-
 .footer-wrap {
   max-width: 1190px;
   margin: 0 auto;
@@ -135,15 +210,15 @@ aside {
   display: inline-block;
 }
 .extra-links li a {
-    font-size: 0.9375rem;
-    color: #888;
+  font-size: 0.9375rem;
+  color: #888;
 }
 .copyright {
-    font-size: 0.6875rem;
-    color: #888;
+  font-size: 0.6875rem;
+  color: #888;
 }
 .sub-logo {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
